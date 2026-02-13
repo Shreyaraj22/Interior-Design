@@ -1,22 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router'
-import logo from "../assets/logo.jpg"
+import React, { useState } from "react";
+import { Link } from "react-router";
+import intlogo from "../assets/intlogo.png";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 
 const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleButtonToggle = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <>
- <nav className="w-full bg-gray-600 flex items-center justify-between px-10 py-4 text-xl font-medium">
-  <img className="h-14" src={logo} alt="logo" />
-  <div className="flex gap-6 text-white">
-    <Link className="text-2xl " to="/home">Home</Link>
-    <Link className="text-2xl" to="/about">About Us</Link>
-    <Link className="text-2xl" to="/contact">Contact Us</Link>
-    <Link className="text-2xl" to="/work">Our Work</Link>
-  </div>
-</nav>
+  
+      <nav className="w-full flex items-center justify-between px-6 md:px-16 py-4 text-xl font-medium bg-white shadow">
 
+        <img className="h-10" src={intlogo} alt="logo" />
+
+        <div className="hidden md:flex gap-10   ">
+          <Link  className =" hover:text-blue-600 hover:underline" to="/home">Home</Link>
+          <Link className="hover:text-blue-600 hover:underline " to="/about">About Us</Link>
+          <Link className="hover:text-blue-600 hover:underline " to="/contact">Contact Us</Link>
+          <Link className="hover:text-blue-600 hover:underline " to="/work">Our Work</Link>
+        </div>
+
+   
+        <div className="block md:hidden">
+          <button onClick={handleButtonToggle}>
+            <RxHamburgerMenu size={28} />
+           
+          </button>
+        </div>
+
+      </nav>
+
+      {showMenu && (
+        <div className="md:hidden flex flex-col gap-4 px-6 py-4 text-center bg-gray-100 shadow">
+          <Link className="  text-black hover:bg-gray-500 text-white" to="/home">Home</Link>
+          <Link  className="bg-gray-500 text-white" to="/about">About Us</Link>
+          <Link  className="bg-gray-500 text-white" to="/contact">Contact Us</Link>
+          <Link  className="bg-gray-500 text-white" to="/work">Our Work</Link>
+        </div>
+      )}
     </>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
+
