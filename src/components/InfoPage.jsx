@@ -53,7 +53,7 @@ const InfoPage = () => {
       Reviews
     </button>
 
-    <button className="bg-gray-800 p-3 font-medium rounded text-white  whitespace-nowrap">
+    <button className="bg-gray-800 p-3 font-medium rounded text-white    whitespace-nowrap">
       Call Us
     </button>
   </div>
