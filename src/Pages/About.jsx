@@ -5,99 +5,143 @@ import profile1 from "../assets/profile1.jpg";
 import profile2 from "../assets/profile2.jpg";
 import pro from "../assets/pro.jpg";
 import Footer from "../components/Footer.jsx";
+import NavBar from "../components/NavBar.jsx"
 
 const About = () => {
   return (
+   <>
+     <NavBar />
     <div className="h-screen w-full relative">
+      
       <div
-        className="h-full w-full flex flex-col justify-center  bg-cover bg-center"
-        style={{ backgroundImage: `url(${contact})` }}
+       
+        className="h-[38rem] w-full flex flex-col justify-center items-center bg-cover bg-center  "
+                  style={{ backgroundImage: `url(${contact})` }}
       >
-        <h1 className="text-4xl md:text-4xl absolute left-[38rem] hover:text-5xl top-[12rem] font-bold text-white mb-4">
-          About Us
-        </h1>
+       
+         <h1 className="text-5xl md:text-5xl p-5 gap-2 font-bold text-white hover:text-5xl">
+            About Us
+          </h1>
 
-        <p className="text-white absolute left-[27rem] top-[16rem] text-sm md:text-lg max-w-2xl px-6">
+        <p className="text-white text-md text-center max-w-2xl">
           Designing luxury with purpose, We craft elegant spaces that inspire{" "}
-          <span className="absolute left-[9rem] top-[2rem]">
+          <span className="">
             {" "}
             living and elevate everyday moments.
           </span>
         </p>
       </div>
-      <div className="h-screen w-screen flex p-15 gap-10 ">
-        <img src={about1} alt="" className="h-[30rem] w-[30rem] rounded-xl" />
-        <div className="bg-gray-700 grid grid-3 h-[30rem] w-[50rem]                flex relative  p-5 gap-5 rounded-xl ">
-          <h1 className="font-extrabold text-4xl font-stretch-50% text-white font-serif p-8 px-5   ">
-            Where Design Meets Emotion. Creating Timeless Spaces.
-          </h1>
-          <p className="font-medium absolute top-[8rem] text-white p-8 ">
-            We design elegant, functional, and personalized interiors that
-            reflect your lifestyle. From concept to completion, our creative
-            approach transforms ordinary spaces into inspiring environments that
-            enhance comfort, beauty, and everyday living.
-          </p>
-          <div className="grid grid-cols-3  gap-5 ">
-            <div className="bg-white flex flex-col justify-center items-center hover:border-2 hover:border-gray-900  gap-0.5 py-1.5 px-2">
-              <h1 className="font-bold text-base sm:text-xl md:text-3xl">
-                150+
-              </h1>
-              <p className="text-[10px] sm:text-xs md:text-sm text-gray-600">
-                Great Design
-              </p>
-            </div>
+    
 
-            <div className="bg-white flex flex-col justify-center items-center  hover:border-2 hover:border-gray-900 gap-0.5 py-1.5 px-2">
-              <h1 className="font-bold text-base sm:text-xl md:text-3xl">5+</h1>
-              <p className="text-[14px] sm:text-xs md:text-sm text-gray-600 ">
-                Years of Experience
-              </p>
-            </div>
+<div className="w-full flex flex-col lg:flex-row p-6 lg:p-12 gap-10">
+  
 
-            <div className="bg-white flex flex-col justify-center items-center gap-0.5    hover:border-2 hover:border-gray-900 py-1.5 px-2">
-              <h1 className="font-bold text-base sm:text-xl md:text-3xl ">
-                50+
-              </h1>
+  <img
+    src={about1}
+    alt=""
+    className="rounded-xl w-full lg:w-[25rem] h-auto lg:h-[36rem] object-cover"
+  />
 
-              <p className="text-[10px] sm:text-xs md:text-sm text-gray-600">
-                Happy Clients
-              </p>
-            </div>
-          </div>
-        </div>
+  <div className="bg-gray-700 w-full flex flex-col p-6 lg:p-8 gap-4 rounded-xl">
+    
+    <h1 className="font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white font-serif">
+      Where Design Meets Emotion. Creating Timeless Spaces.
+    </h1>
+
+    <p className="font-medium text-sm sm:text-base lg:text-lg text-white">
+      We design elegant, functional, and personalized interiors that
+      reflect your lifestyle. From concept to completion, our creative
+      approach transforms ordinary spaces into inspiring environments that
+      enhance comfort, beauty, and everyday living.
+    </p>
+
+ 
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-5">
+      
+
+      <div className="bg-white flex h-[10rem] w-full flex-col justify-center items-center rounded-2xl hover:border-2 hover:border-gray-900 transition">
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">
+          150+
+        </h1>
+        <p className="text-xs sm:text-sm text-gray-600">
+          Great Design
+        </p>
       </div>
-      <div className="bg-gray-700  p-10 gap-10 ">
-        <h2 className="  font-extrabold text-4xl absolute left-[29rem] gap-6 hover:underline text-white p-5">
+
+      <div className="bg-white flex h-[10rem] w-full flex-col justify-center items-center rounded-2xl hover:border-2 hover:border-gray-900 transition">
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">
+          5+
+        </h1>
+        <p className="text-xs sm:text-sm text-gray-600">
+          Years of Experience
+        </p>
+      </div>
+
+  
+      <div className="bg-white flex h-[10rem] w-full flex-col justify-center items-center rounded-2xl hover:border-2 hover:border-gray-900 transition">
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">
+          50+
+        </h1>
+        <p className="text-xs sm:text-sm text-gray-600">
+          Happy Clients
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="bg-gray-700 flex justify-center items-center flex-col  p-8 gap-2 ">
+        <h2 className="  font-extrabold text-4xl  text-white p-5">
           Expert Design Team
         </h2>
-        <p className="font-medium text-lg  top-[45rem] p-24 text-white">
+        <p className="font-medium text-lg p-8 text-white">
           Our team of skilled interior designers, architects, and craftsmen work
           together to deliver creative, functional, and elegant solutions.{" "}
-          <br /> &emsp;&emsp; &emsp;&emsp;&emsp; With attention to detail and
+         With attention to detail and
           passion for excellence, we transform your ideas into beautifully
-          designed spaces
+          designed spaces.
         </p>
 
-        <div className="grid grid-cols-3 gap-30 p-2 ">
+        <div className="grid md:grid-cols-3  sm:grid-cols-1 gap-30 p-5 ">
           <img
             src={profile2}
             alt=""
-            className="hover:border-2 hover:border-white "
+            className="hover:border-2 hover:scale-[1.1] transition duration-300 "
           />
           <img
             src={profile1}
             alt=""
-            className="hover:border-2 hover:border-white "
+            className="hover:border-2 hover:scale-[1.1] transition duration-300 "
           />
           <img
             src={pro}
             alt=""
-            className="hover:border-2 hover:border-white "
+            className="hover:border-2 hover:scale-[1.1] transition duration-300 "
           />
         </div>
       </div>
       <Footer />
     </div>
+    </>
   );
 };
 

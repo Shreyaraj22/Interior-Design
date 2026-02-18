@@ -1,59 +1,37 @@
 import React from "react";
 import living from "../assets/living.jpg";
+import hero from "../assets/hero.jpg";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div>
-      <div className="flex flex-col md:flex-row border border-gray-600">
-        <div className="w-full md:w-1/3 relative bg-gray-600 text-white flex items-center justify-center min-h-[18rem] md:min-h-[40rem]">
-          <h1
-            className="
-            text-xl md:text-2xl font-bold 
-            absolute left-4 md:left-[2rem] 
-            top-8 md:top-[8rem] hover:underline
-          "
-          >
-            Transforming <br />
-            Spaces Into Stunning <br />
-            Experiences
+    <>
+      <div
+        className=" bg-cover opacity-[0.9] text-center h-screen "
+        style={{ backgroundImage: `url(${hero})` }}
+      >
+        <div className="flex relative flex-col gap-20">
+          <h1 className="text-xl md:text-7xl font-bold  text-white absolute top-[10rem] left-[2rem]">
+            Transforming Spaces Into Stunning Experiences
           </h1>
-
-          <p
-            className="
-            text-sm md:text-base
-            absolute left-4 md:left-[2rem] 
-            top-[10rem] md:top-[18rem]  
-          "
-          >
-            We design elegant, 
-            functional, <br /> and  personalized interiors  <br />
-            that reflect  your lifestyle<br />
-            and elevate your everyday <br />  living and 
-            timeless  <br /> interior spaces tailored to <br /> your vision.
+          <p className="text-lg text-center text-gray- w-[95rem] absolute top-[20rem] left-[2rem] ">
+            We design elegant, functional and personalized interiors that
+            reflect your <br /> lifestyle and elevate your everyday living and
+            timeless interior spaces tailored to your vision.
           </p>
-        </div>
-
-        <div
-          className="w-full md:w-[84rem] h-[22rem] md:h-[40rem] relative bg-cover bg-center"
-          style={{ backgroundImage: `url(${living})` }}
-        >
-          {/* <button
-            className="
-            bg-gray-600/50 backdrop-blur-sm
-            p-2 px-4 text-base md:text-xl
-            absolute top-[10rem] md:top-[18rem]
-            left-[50%] md:left-[26rem]
-            -translate-x-1/2 md:translate-x-0
-            text-white font-light
-            hover:text-2xl hover:bg-gray-600
-          "
-          >
-            Our Work
-          </button> */}
+          <div className=" flex gap-10 text-center ml-[20rem] absolute left-[13rem] top-[26rem] text-xl">
+            <button className="bg-amber-600 text-black  text-white  py-4 px-10 rounded-xl  hover:text-white hover:bg-black ">
+              Explore Design
+            </button>
+            <button className="hover:bg-amber-600 text-black bg-gray-100 hover:text-white py-4 px-10 hover:text-black  rounded-xl flex justify-center items-center gap-2  ">
+              Book consultation <FaLongArrowAltRight className="text-gray-600 "   />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 export default HeroSection;
+{/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 mt-8"></div> */}

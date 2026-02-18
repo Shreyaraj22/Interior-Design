@@ -6,32 +6,32 @@ import w2 from "../assets/w2.jpg";
 import w9 from "../assets/w9.jpg";
 import w4 from "../assets/w4.jpg";
 import Footer from "../components/Footer.jsx";
+import NavBar from "../components/NavBar.jsx";
 
 const OurWork = () => {
   return (
     <>
-      <div className="h-screen w-full relative">
+      <NavBar />
+      <div className="    ">
         <div
-          className="h-full w-full flex flex-col  justify-center  items-center bg-cover bg-center "
+          className="h-[38rem] w-full flex flex-col  justify-center  items-center bg-cover bg-center "
           style={{ backgroundImage: `url(${contact})` }}
         >
-          <h1 className="text-4xl   font-bold text-white mb-4  hover:text-5xl">
+          <h1 className="text-5xl md:text-5xl p-5 gap-2 font-bold text-white hover:text-5xl">
             Our Work
           </h1>
-          <p className="text-white">
+          <p className="text-white text-md text-center max-w-2xl  ">
             Explore our curated portfolio of thoughtfully designed spaces that
-            blend elegance, <br /> &emsp;
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            functionality and comfort.
+            blend elegance, <br /> functionality and comfort.
           </p>
         </div>
       </div>
       <div>
-        <div className="text-center">
-          <h1 className="text-4xl font-extrabold p-10">
+        <div className="text-center p-5">
+          <h1 className="text-4xl font-extrabold p-10 hover:scale-[1.1] transition duration-300">
             Crafting Spaces That Inspire Living
           </h1>
-          <p className="text-md ">
+          <p className="text-xl ">
             We bring creativity, precision, and passion to every project,
             delivering interiors that combine elegance, comfort, and
             functionality.
@@ -40,17 +40,18 @@ const OurWork = () => {
             lifestyle.
           </p>
         </div>
-        <div className="grid grid-cols-2  text-center h-screen mt-8 gap-10 p-20  text-white">
-          <div className="bg-gray-600  rounded-2xl hover:border-2 hover:border-gray-800 ">
-            <h1 className="font-extrabold text-2xl p-5  hover:underline ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-12 ml-25 w-full max-w-7xl text-white">
+          <div className="bg-gray-600 rounded-2xl flex flex-col h-[13rem] justify-center items-center ">
+            <h1 className="font-extrabold text-2xl p-5   ">
               Residential Interiors
             </h1>
-            <p className="p-5">
-              Creating warm, stylish, and functional homes that reflect comfort
+            <p className="p-2">
+              Creating warm, stylish, and functional homes that reflect comfort{" "}
+              <br />
               and personality.
             </p>
           </div>
-          <div className="bg-gray-600  rounded-2xl p-5 hover:border-2 hover:border-gray-800">
+          <div className="bg-gray-600  rounded-2xl p-5 h-[13rem] flex flex-col justify-center items-center ">
             <h1 className="font-extrabold text-2xl hover:underline ">
               Modular Kitchens
             </h1>
@@ -59,65 +60,53 @@ const OurWork = () => {
               seamless functionality.
             </p>
           </div>
-          <div className="bg-gray-600  rounded-2xl p-5 hover:border-2 hover:border-gray-800 ">
+          <div className="bg-gray-600 h-[13rem] rounded-2xl p-5 flex flex-col justify-center items-center  ">
             <h1 className="font-extrabold text-2xl hover:underline">
               Luxury Renovations
+            </h1>
+            <p className="p-5">
+              Designing efficient workspaces that enhance productivity and brand
+              presence.
+            </p>
+          </div>
+          <div className="bg-gray-600 h-[13rem] rounded-2xl p-5 flex flex-col justify-center items-center ">
+            <h1 className="font-extrabold text-2xl hover:underline ">
+              Commercial Spaces
             </h1>
             <p className="p-5">
               Transforming existing spaces into contemporary, refined, and
               timeless interiors.
             </p>
           </div>
-          <div className="bg-gray-600  rounded-2xl p-5 hover:border-2 hover:border-gray-800">
-            <h1 className="font-extrabold text-2xl hover:underline ">
-              Commercial Spaces
-            </h1>
-            <p className="p-5">
-              Designing modern and efficient workspaces that enhance
-              productivity and brand presence.
-            </p>
-          </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 bg-gray-400 ">
-        <div className="text-xl font-medium text-white p-18 ">
+
+      <div className="w-full grid md:grid-cols-3 grid-cols-1 bg-gray-400 gap-8 p-8">
+        <p className="text-md sm:text-lg lg:text-2xl font-extrabold text-white  text-center p-10 mt-8">
           Our work reflects a perfect balance of creativity, functionality, and
           elegance. We design thoughtfully crafted interiors that enhance
           everyday living and create inspiring environments.
-          <br /> Our projects showcase timeless aesthetics, quality
-          craftsmanship, and innovative solutions. Each space we create is a
-          true expression of our client’s vision and lifestyle.
-        </div>
+          <br />
+          <br />
+          Our projects showcase timeless aesthetics, quality craftsmanship, and
+          innovative solutions. Each space we create is a true expression of our
+          client’s vision and lifestyle.
+        </p>
 
         <img
           src={work01}
           alt=""
-          className="p-15 rounded-md hover:border-2 hover:border-white "
+          className="w-full h-[34rem] rounded-2xl  mt-6 mb-6"
         />
 
-        <div className="bg-gray-400 grid grid-cols-2 gap-5 p-15 ">
-          <img
-            src={w1}
-            alt=""
-            className="rounded-md hover:border-2 hover:border-white "
-          />
-          <img
-            src={w2}
-            alt=""
-            className="rounded-md hover:border-2 hover:border-white"
-          />
-          <img
-            src={w9}
-            alt=""
-            className="rounded-md hover:border-2 hover:border-white"
-          />
-          <img
-            src={w4}
-            alt=""
-            className="rounded-md hover:border-2 hover:border-white"
-          />
+        <div className="grid grid-cols-2 h-[18rem] md:grid-cols-2 gap-6 p-10    ">
+          <img src={w1} alt="" className="rounded-2xl  " />
+          <img src={w2} alt="" className="rounded-2xl  " />
+          <img src={w9} alt="" className="rounded-2xl  " />
+          <img src={w4} alt="" className="rounded-2xl  " />
         </div>
       </div>
+
       <Footer />
     </>
   );

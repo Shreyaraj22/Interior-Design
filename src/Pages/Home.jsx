@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <ScrollToTop />
-      <NavBar />
+
       <HeroSection />
       <InfoPage />
       <Info />

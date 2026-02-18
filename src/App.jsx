@@ -14,12 +14,14 @@ import Contact from "./Pages/Contact";
 import OurWork from "./Pages/OurWork"
 import About from "./Pages/About"
 import Practice from "./Pages/Practice"
+import Aboutt from "./components/Aboutt";
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <div> <NavBar  /> <Home /> </div>,
   },
   {
     path: "/About",
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
    {
     path: "/work",
     element: <OurWork />,
+  },
+  {
+    path: "/aboutt",
+    element: <Aboutt />,
   },
 ]);
 

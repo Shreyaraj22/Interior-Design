@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 p-10 bg-gray-800 text-white">
        
         <div>
-          <h1 className="font-bold mb-5  hover:underline  hover:text-blue-600">Quick Links</h1>
+          <h1 className="font-bold mb-5  hover:underline  hover:text-amber-600">Quick Links</h1>
           <div className="flex flex-col items-start gap-3  ">
             <p className="hover:underline">Home</p>
             <p className="hover:underline">About Us</p>
@@ -28,7 +28,7 @@ const Footer = () => {
 
     
         <div>
-          <h1 className="font-bold mb-5 hover:underline hover:text-blue-600 ">Services</h1>
+          <h1 className="font-bold mb-5 hover:underline hover:text-amber-600 ">Services</h1>
           <div className="flex flex-col items-start gap-3  ">
             <p className="hover:underline">Residential Design</p>
             <p className="hover:underline">Commercial Design</p>
@@ -39,7 +39,7 @@ const Footer = () => {
 
      
         <div>
-          <h1 className="font-bold mb-5 hover:underline hover:text-blue-600 ">Contacts</h1>
+          <h1 className="font-bold mb-5 hover:underline hover:text-amber-600 ">Contacts</h1>
           <div className="flex flex-col items-start gap-2   
           ">
             <div className="flex items-center gap-3 hover:underline"> 
@@ -67,7 +67,7 @@ const Footer = () => {
 
        
         <div>
-          <h1 className="font-bold mb-5 hover:underline hover:text-blue-600 ">Follow Us</h1>
+          <h1 className="font-bold mb-5 hover:underline hover:text-amber-600 ">Follow Us</h1>
           <div className="flex gap-5 items-center my-3 hover:underline">
             <FaInstagram />
             <p>Instagram</p>
