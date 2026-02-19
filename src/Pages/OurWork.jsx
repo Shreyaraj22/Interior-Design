@@ -28,7 +28,7 @@ const OurWork = () => {
       </div>
       <div>
         <div className="text-center p-5">
-          <h1 className="text-4xl font-extrabold p-10 hover:scale-[1.1] transition duration-300">
+          <h1 className="text-4xl font-extrabold p-10 hover:text-amber-600 hover:scale-[1.1] transition duration-300">
             Crafting Spaces That Inspire Living
           </h1>
           <p className="text-xl ">
@@ -40,19 +40,19 @@ const OurWork = () => {
             lifestyle.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-12 ml-25 w-full max-w-7xl text-white">
-          <div className="bg-gray-600 rounded-2xl flex flex-col h-[13rem] justify-center items-center ">
-            <h1 className="font-extrabold text-2xl p-5   ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-12 ml-6  text-white">
+          <div className="bg-gray-600  rounded-2xl p-2 h-[13rem] flex flex-col justify-center items-center ">
+            <h1 className="font-extrabold text-2xl hover:text-amber-600 hover:scale-[1.1] transition duration-300 ">
               Residential Interiors
             </h1>
-            <p className="p-2">
+            <p className="p-5">
               Creating warm, stylish, and functional homes that reflect comfort{" "}
               <br />
               and personality.
             </p>
           </div>
           <div className="bg-gray-600  rounded-2xl p-5 h-[13rem] flex flex-col justify-center items-center ">
-            <h1 className="font-extrabold text-2xl hover:underline ">
+            <h1 className="font-extrabold text-2xl hover:text-amber-600 hover:scale-[1.1] transition duration-300 ">
               Modular Kitchens
             </h1>
             <p className="p-5">
@@ -61,7 +61,7 @@ const OurWork = () => {
             </p>
           </div>
           <div className="bg-gray-600 h-[13rem] rounded-2xl p-5 flex flex-col justify-center items-center  ">
-            <h1 className="font-extrabold text-2xl hover:underline">
+            <h1 className="font-extrabold text-2xl hover:text-amber-600 hover:scale-[1.1] transition duration-300">
               Luxury Renovations
             </h1>
             <p className="p-5">
@@ -70,7 +70,7 @@ const OurWork = () => {
             </p>
           </div>
           <div className="bg-gray-600 h-[13rem] rounded-2xl p-5 flex flex-col justify-center items-center ">
-            <h1 className="font-extrabold text-2xl hover:underline ">
+            <h1 className="font-extrabold text-2xl  hover:text-amber-600   hover:scale-[1.1] transition duration-300 ">
               Commercial Spaces
             </h1>
             <p className="p-5">
@@ -81,7 +81,7 @@ const OurWork = () => {
         </div>
       </div>
 
-      <div className="w-full grid md:grid-cols-3 grid-cols-1 bg-gray-400 gap-8 p-8">
+      <div className="w-full   grid md:grid-cols-3 grid-cols-1 bg-gray-400 gap-8 p-8">
         <p className="text-md sm:text-lg lg:text-2xl font-extrabold text-white  text-center p-10 mt-8">
           Our work reflects a perfect balance of creativity, functionality, and
           elegance. We design thoughtfully crafted interiors that enhance
@@ -96,14 +96,14 @@ const OurWork = () => {
         <img
           src={work01}
           alt=""
-          className="w-full h-[34rem] rounded-2xl  mt-6 mb-6"
+          className="w-full h-[34rem] rounded-2xl  mt-6 mb-6 hover:scale-[1.1] transition duration-300"
         />
 
-        <div className="grid grid-cols-2 h-[18rem] md:grid-cols-2 gap-6 p-10    ">
-          <img src={w1} alt="" className="rounded-2xl  " />
-          <img src={w2} alt="" className="rounded-2xl  " />
-          <img src={w9} alt="" className="rounded-2xl  " />
-          <img src={w4} alt="" className="rounded-2xl  " />
+        <div className="grid grid-cols-2  md:grid-cols-2  gap-6 p-10    ">
+          <img src={w1} alt="" className="rounded-2xl hover:scale-[1.1] transition duration-300 " />
+          <img src={w2} alt="" className="rounded-2xl hover:scale-[1.1] transition duration-300 " />
+          <img src={w9} alt="" className="rounded-2xl hover:scale-[1.1] transition duration-300 " />
+          <img src={w4} alt="" className="rounded-2xl hover:scale-[1.1] transition duration-300 " />
         </div>
       </div>
 

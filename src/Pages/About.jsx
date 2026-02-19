@@ -42,13 +42,13 @@ const About = () => {
     className="rounded-xl w-full lg:w-[25rem] h-auto lg:h-[36rem] object-cover"
   />
 
-  <div className="bg-gray-700 w-full flex flex-col p-6 lg:p-8 gap-4 rounded-xl">
+  <div className="bg-gray-700 w-full flex flex-col p-6 lg:p-12 gap-8 rounded-xl">
     
     <h1 className="font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white font-serif">
       Where Design Meets Emotion. Creating Timeless Spaces.
     </h1>
 
-    <p className="font-medium text-sm sm:text-base lg:text-lg text-white">
+    <p className="font-medium text-md sm:text-base lg:text-lg  text-white">
       We design elegant, functional, and personalized interiors that
       reflect your lifestyle. From concept to completion, our creative
       approach transforms ordinary spaces into inspiring environments that
@@ -56,7 +56,7 @@ const About = () => {
     </p>
 
  
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-20">
       
 
       <div className="bg-white flex h-[10rem] w-full flex-col justify-center items-center rounded-2xl hover:border-2 hover:border-gray-900 transition">
